@@ -1,20 +1,20 @@
 ![a picture of my example plugin](./screenshots/1.png)
-## ecosia-plugin-react
-**An easy to use tool that makes planting trees even easier**
+## ecosia-password-gen
+**Plant trees... securely :D**
 
 ### About
-This is boilerplate code for making a search extension for Ecosia, most of which is forked from [kryptokinght's react-extension-boilerplate](https://github.com/kryptokinght/react-extension-boilerplate). It allows developers to easily create cool features like DuckDuckGo's [password generation feature](https://duckduckgo.com/?q=password+strong+12&ia=answer) _[(more info)](https://help.duckduckgo.com/duckduckgo-help-pages/features/instant-answers-and-other-features/)_ or Google(🤢)'s [timer feature](https://www.google.com/search?q=timer) with React.
-My example plugin just echos "Hello world" if you search it in Ecosia... but the possibilities are truly endless! The idea is that cool new features will help reel in new users to Ecosia, and new Ecosia users === more trees planted 🌳💞. 
+This is an implementation of my [Ecosia extension tool](https://github.com/nbennett320/ecosia-widget-react) -- it adds a password generation feature to Ecosia, obviously inspired by [DuckDuckGo's password generation feature](https://duckduckgo.com/?q=password+strong+12&ia=answer) _[(more info)](https://help.duckduckgo.com/duckduckgo-help-pages/features/instant-answers-and-other-features/)_.
+The idea is that cool new features like this one will help reel in new users to Ecosia, and new Ecosia users === more trees planted 🌳💞. 
 
 ![ecosia-plugin-react's logo](./src/img/icon-256.png)
 
 ### Installation
 ```
 # clone the repo
-$ git clone git@github.com:nbennett320/ecosia-plugin-react.git
+$ git clone git@github.com:nbennett320/ecosia-password-gen.git
 
 # not sure what does but it seems to work
-$ cd ecosia-plugin-react/
+$ cd ecosia-password-gen/
 
 # install dependencies with yarn
 $ yarn install
