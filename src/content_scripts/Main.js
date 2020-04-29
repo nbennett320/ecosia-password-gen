@@ -1,13 +1,13 @@
 import React, { Component } from 'react'
+import Password from './Password'
 import Footer from './Footer'
 
 export default class Main extends Component {
     render() {
-        const { query } = this.props
-        console.log(query)
+        const { pword } = this.props
         return (
             <div className="widget-container" style={styles.main}>
-                
+                <Password pword={pword} />
                 <Footer />
             </div>
         )
@@ -16,6 +16,6 @@ export default class Main extends Component {
 
 const styles = {
     main: {
-        padding: '30px 20px'
+        padding: '0'
     }
 }

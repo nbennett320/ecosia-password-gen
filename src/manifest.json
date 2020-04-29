@@ -17,8 +17,14 @@
   ],
   "permissions": [
     "*://*.ecosia.org/*",
+    "*://*.randomword.com/*",
+    "webRequest",
     "storage",
-    "unlimitedStorage"
+    "unlimitedStorage",
+    "clipboardWrite"
+  ],
+  "web_accessible_resources": [
+    "lib/dictionary.txt"
   ],
   "icons": {
     "128": "img/icon-128.png",
