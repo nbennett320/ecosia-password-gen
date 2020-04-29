@@ -12,7 +12,7 @@ export default class Bottom extends Component {
   render() {
     return (
       <span style={styles.main}>
-        <a href="https://github.com/nbennett320/ecosia-calc/issues/new"
+        <a href="https://github.com/nbennett320/ecosia-password-gen/issues/new"
           className="widget__footer-feedback js-feedback-open"
           onMouseEnter={() => this.setState({isHovering: true})}
           onMouseLeave={() => this.setState({isHovering: false})}
