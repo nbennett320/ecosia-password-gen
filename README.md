@@ -35,5 +35,3 @@ $ yarn run build
 $ npm run build
 $ npm run compress -- [options]
 ```
-
-More info and details can be found on [kryptokinght's repo](https://github.com/kryptokinght/react-extension-boilerplate).
