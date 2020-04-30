@@ -1,9 +1,18 @@
-import scrape from './scrape'
-
 const dict = {
     default: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!?$',
     strong: 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~\s',
-    words: scrape,
+    words: len => {
+        const getWord = browser.runtime.sendMessage({
+            pwordLength: len
+        })
+        getWord.then(res => {
+            console.log(res)
+            return res.response
+        }, err => {
+            console.log("error scraping word:\n", err)
+            return "Error"
+        })
+    },
     charsNums: '0123456789!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~\s'
 }
 
@@ -37,10 +46,10 @@ const generatePassword = {
     generateWords: len => {
         let randWord = '', pword = ''
         while(pword.length < len) {
-            randWord = dict.words()
+            randWord = dict.words(len)
             // if word is too long retry
             while(randWord < len / 3) {
-                randWord = dict.words()
+                randWord = dict.words(len)
             }
             console.log(randWord)
             const randCharIndex = Math.floor(Math.random() * dict.charsNums.length)

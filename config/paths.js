@@ -75,6 +75,7 @@ module.exports = {
   appTemplate: resolveApp('config/template.html'),
   optionsTemplate: resolveApp('src/options/template.html'),
   appOptionsJs: resolveModule(resolveApp, 'src/options/index'),
+  appBackgroundJs: resolveModule(resolveApp, 'src/background/index'),
   appContentJs: resolveModule(resolveApp, 'src/content_scripts/index'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),

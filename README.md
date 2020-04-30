@@ -8,6 +8,26 @@ The idea is that cool new features like this one will help reel in new users to 
 
 ![ecosia-plugin-react's logo](./src/img/icon-256.png)
 
+### Syntax
+```
+# generate password of 12 digits
+> password 12
+> pword 12
+
+# generate a strong password
+> password 12 strong
+> password strong 12
+> pword strong 12
+> pword 12 strong
+
+# generate a password that contains words,
+# result will be at least 16 characters
+> password words 16
+> password 16 words
+> pword words 16
+> pword 16 words
+```
+
 ### Installation
 ```
 # clone the repo

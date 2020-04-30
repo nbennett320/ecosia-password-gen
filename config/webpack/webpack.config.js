@@ -19,8 +19,6 @@ const doesSidebarHtmlExist = fs.existsSync(paths.sidebarTemplate)
 const doesBackgroundExist = fs.existsSync(paths.appBackgroundJs)
 const doesContentExist = fs.existsSync(paths.appContentJs)
 
-
-
 module.exports = function (webpackEnv) {
   const isEnvDevelopment = webpackEnv === 'development'
   const isEnvProduction = webpackEnv === 'production'

@@ -1,9 +1,9 @@
 {
   "version": "0.0.1",
   "manifest_version": 2,
-  "name": "Ecosia Calculator",
-  "short_name": "Ecosia Calc",
-  "description": "An environmentally friendly calculator.",
+  "name": "Ecosia Password Generator",
+  "short_name": "Ecosia Password Gen",
+  "description": "Plant trees... securely :D",
   "content_scripts": [
     {
       "matches": [
@@ -15,16 +15,20 @@
       ]
     }
   ],
+  "background": {
+    "scripts": [
+      "lib/js/browser-polyfill.js",
+      "background.js"
+    ]
+  },
   "permissions": [
     "*://*.ecosia.org/*",
     "*://*.randomword.com/*",
     "webRequest",
     "storage",
     "unlimitedStorage",
-    "clipboardWrite"
-  ],
-  "web_accessible_resources": [
-    "lib/dictionary.txt"
+    "clipboardWrite",
+    "activeTab"
   ],
   "icons": {
     "128": "img/icon-128.png",
